@@ -30,7 +30,7 @@ const Navbar = ({ cartCount, onOpenCart }) => {
           <div className="hidden md:flex space-x-8 items-center">
             <Link to="/" className="text-gray-700 hover:text-red-700 font-medium border-b-2 border-transparent hover:border-red-700 transition-all">Inicio</Link>
             <Link to="/" className="text-gray-700 hover:text-red-700 font-medium transition-colors">Productos</Link>
-            <Link to="#" className="text-gray-700 hover:text-red-700 font-medium transition-colors">Nosotros</Link>
+            <Link to="/nosotros" onClick={closeMenu} className="text-gray-700 hover:text-red-700 font-medium transition-colors">Nosotros</Link>
             <Link to="#" className="text-gray-700 hover:text-red-700 font-medium transition-colors">Puntos de Venta</Link>
           </div>
 

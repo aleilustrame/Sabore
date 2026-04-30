@@ -25,7 +25,7 @@ const Footer = ({ onLogoClick }) => {
           <ul className="space-y-2 text-sm text-red-100">
             <li><Link to="/" onClick={onLogoClick} className="hover:text-white transition-colors">Inicio</Link></li>
             <li><Link to="/" onClick={onLogoClick} className="hover:text-white transition-colors">Productos</Link></li>
-            <li><Link to="#" className="hover:text-white transition-colors">Nosotros</Link></li>
+            <li><Link to="/nosotros" className="hover:text-white transition-colors">Nosotros</Link></li>
             <li><Link to="#" className="hover:text-white transition-colors">Puntos de Venta</Link></li>
           </ul>
         </div>

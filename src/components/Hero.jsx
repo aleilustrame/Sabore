@@ -4,13 +4,13 @@ import santarosano from '../assets/santarosano2.png'
 
 const Hero = ({ onStartShopping }) => {
   return (
-    <section className="relative w-full overflow-hidden bg-gray-900">
+    <section className="relative w-auto overflow-hidden bg-gray-900">
       {/* IMAGEN DE FONDO CON OVERLAY */}
       <div className="absolute inset-0 z-0">
         <img 
           src={santarosano}
           alt="Chorizo santarosano" 
-          className="w-auto h-autoo object-cover opacity-100" // Ajusta la opacidad para que el texto resalte
+          className="w-auto h-full object-cover object-center opacity-100" // Ajusta la opacidad para que el texto resalte
         />
         {/* Gradiente  */}
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/30 to-transparent"></div>

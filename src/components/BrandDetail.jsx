@@ -8,7 +8,7 @@ const BrandDetail = () => {
     Saborita: {
       title: "Saborita",
       benefits: "Especialistas en condimentos y sabores para la industria cárnica desde 2013.",
-      products: ["Mezclas para Chorizo", "Sabores Líquidos", "Colorantes"],
+      products: ["Chorizo Paisa", "Chorizo Parrillero", "Salchichon Elite Premium"],
     },
     Sabore: {
       title: "Saborita",

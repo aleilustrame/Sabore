@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom'; // Importamos los componentes de ruta
 import Navbar from './components/Navbar';
+import About from './pages/About';
 import Hero from './components/Hero';
 import ProductExplorer from './components/ProductExplorer';
 import { useProducts } from './hooks/useProducts';
@@ -79,6 +80,7 @@ function App() {
 
         {/* RUTA DE MARCAS */}
         <Route path="/marca/:brandId" element={<BrandDetail />} />
+        <Route path="/nosotros" element={<About />} />
       </Routes>
 
       <Footer onLogoClick={() => setShowCatalog(false)} />

@@ -6,7 +6,7 @@ const ProductExplorer = ({ products = [], addToCart, onBack }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("Todos");
 
-  // Categorías basadas en ADITECC SAS
+  // Categorías basadas en saborita
   const categories = ["Todos", "Chorizos", "Salchichas", "Salchichones", "Tajados", "Linea monaco", "Economico"];
 
   const filteredProducts = products?.filter(product => {
