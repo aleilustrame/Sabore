@@ -79,7 +79,7 @@ const Navbar = ({ cartCount, onOpenCart }) => {
           <div className="px-4 pt-4 pb-6 space-y-3 shadow-inner">
             <Link to="/" onClick={closeMenu} className="block text-lg font-medium text-red-700">Inicio</Link>
             <Link to="/" onClick={closeMenu} className="block text-lg font-medium text-gray-700">Productos</Link>
-            <Link to="#" onClick={closeMenu} className="block text-lg font-medium text-gray-700">Nosotros</Link>
+            <Link to="/nosotros" onClick={closeMenu} className="block text-lg font-medium text-gray-700">Nosotros</Link>
             <Link to="#" onClick={closeMenu} className="block text-lg font-medium text-gray-700">Puntos de Venta</Link>
             <hr className="my-2" />
             <button className="w-full flex justify-center items-center bg-gray-900 text-white px-5 py-3 rounded-xl font-bold">
