@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'; // Importamos los componentes 
 import Navbar from './components/Navbar';
 import About from './pages/About';
 import Hero from './components/Hero';
+import ContactSection from './components/ContactSection';
 import ProductExplorer from './components/ProductExplorer';
 import { useProducts } from './hooks/useProducts';
 import CartModal from './components/CartModal';
@@ -68,6 +69,7 @@ function App() {
             <>
               <Hero onStartShopping={() => setShowCatalog(true)} />
               <BrandStrip />
+              <ContactSection />
             </>
           ) : (
             <ProductExplorer 
