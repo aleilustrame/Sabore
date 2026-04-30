@@ -1,11 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const BrandStrip = () => {
   const brands = [
     { name: "Saborita", logo: "/assets/brands/saborita.svg" },
     { name: "Sabore", logo: "/assets/brands/sabore.svg" },
     { name: "Avileña", logo: "/assets/brands/avileña.svg", customStyle:{height:'45px'} },
-    // Agrega aquí otras marcas o líneas de productos de la empresa
   ];
 
   return (
@@ -16,6 +16,7 @@ const BrandStrip = () => {
         </p>
         <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 hover:opacity-100">
           {brands.map((brand) => (
+            <Link key={brand.name} to={`/marca/${brand.id}`} className="hover:scale-105 transition-transform">
             <img 
               key={brand.name}
               src={brand.logo} 
@@ -23,6 +24,7 @@ const BrandStrip = () => {
               style={brand.customStyle || { height: '70px' }}
               className=" md:h-20 w-auto object-contain hover:scale-120 transition-transform"
             />
+            </Link>
           ))}
         </div>
       </div>

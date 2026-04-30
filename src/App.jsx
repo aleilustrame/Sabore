@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import { Routes, Route } from 'react-router-dom'; // Importamos los componentes de ruta
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import ProductExplorer from './components/ProductExplorer'; // Importamos el nuevo nombre
+import ProductExplorer from './components/ProductExplorer';
 import { useProducts } from './hooks/useProducts';
 import CartModal from './components/CartModal';
 import BrandStrip from './components/BrandStrip';
+import BrandDetail from './components/BrandDetail'; // Importa el nuevo componente
 
 function App() {
   const { products, loading } = useProducts();
@@ -12,8 +14,7 @@ function App() {
   const [showCatalog, setShowCatalog] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
 
-  // --- LÓGICA DEL CARRITO ---
-
+  // --- LÓGICA DEL CARRITO (Se mantiene igual) ---
   const addToCart = (product) => {
     setCart(prev => {
       const exists = prev.find(item => item.id === product.id);
@@ -42,8 +43,6 @@ function App() {
 
   const totalPrice = cart.reduce((acc, item) => acc + (item.price * item.qty), 0);
 
-  // --- RENDER ---
-
   if (loading) return (
     <div className="p-20 text-center font-bold tracking-widest animate-pulse">
       Sincronizando Catálogo...
@@ -57,20 +56,27 @@ function App() {
         onOpenCart={() => setIsCartOpen(true)} 
       />
 
-      {!showCatalog ? (
-        <Hero onStartShopping={() => setShowCatalog(true)} />
-      ) : (
-        /* 
-           Sustituimos todo el <main> anterior por el nuevo componente.
-           Esto mantiene tu App.jsx limpio y organizado.
-        */
-        <ProductExplorer 
-          products={products} 
-          addToCart={addToCart} 
-          onBack={() => setShowCatalog(false)} 
-        />
-      )}
-      <BrandStrip />
+      <Routes>
+        {/* RUTA PRINCIPAL */}
+        <Route path="/" element={
+          !showCatalog ? (
+            /* Usamos el fragmento <> para agrupar Hero y BrandStrip */
+            <>
+              <Hero onStartShopping={() => setShowCatalog(true)} />
+              <BrandStrip />
+            </>
+          ) : (
+            <ProductExplorer 
+              products={products} 
+              addToCart={addToCart} 
+              onBack={() => setShowCatalog(false)} 
+            />
+          )
+        } />
+
+        {/* RUTA DE MARCAS */}
+        <Route path="/marca/:brandId" element={<BrandDetail />} />
+      </Routes>
 
       <CartModal 
         isOpen={isCartOpen} 
