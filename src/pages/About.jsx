@@ -52,9 +52,15 @@ const About = () => {
       {/* CTA Final */}
       <section className="py-20 text-center">
         <h2 className="text-3xl font-bold mb-8">¿Listo para probar el sabor real?</h2>
-        <Link to="/" className="bg-red-700 text-white px-10 py-4 rounded-full font-bold hover:bg-red-800 transition-all">
+        <Link to="/" className=" mr-2 bg-red-700 text-white px-10 py-4 rounded-full font-bold hover:bg-red-800 transition-all">
           Ir a la Tienda
         </Link>
+
+        <Link to="/" className=" ml-2 bg-gray-900 text-white px-10 py-4 rounded-full font-bold hover:bg-red-800 transition-all">
+          Quiero ser distribuidor
+        </Link>
+        
+        
       </section>
     </div>
   );
