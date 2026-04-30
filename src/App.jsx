@@ -7,6 +7,7 @@ import { useProducts } from './hooks/useProducts';
 import CartModal from './components/CartModal';
 import BrandStrip from './components/BrandStrip';
 import BrandDetail from './components/BrandDetail'; // Importa el nuevo componente
+import Footer from './components/Footer';
 
 function App() {
   const { products, loading } = useProducts();
@@ -52,9 +53,11 @@ function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar 
-        cartCount={cart.reduce((a, b) => a + b.qty, 0)} 
-        onOpenCart={() => setIsCartOpen(true)} 
-      />
+  cartCount={cart.reduce((a, b) => a + b.qty, 0)} 
+  onOpenCart={() => setIsCartOpen(true)} 
+  // Añadimos esta prop para resetear la vista
+  onLogoClick={() => setShowCatalog(false)} 
+/>
 
       <Routes>
         {/* RUTA PRINCIPAL */}
@@ -77,6 +80,8 @@ function App() {
         {/* RUTA DE MARCAS */}
         <Route path="/marca/:brandId" element={<BrandDetail />} />
       </Routes>
+
+      <Footer onLogoClick={() => setShowCatalog(false)} />
 
       <CartModal 
         isOpen={isCartOpen} 
