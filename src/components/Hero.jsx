@@ -12,7 +12,7 @@ const Hero = ({ onStartShopping }) => {
           alt="Chorizo santarosano" 
           className="w-auto h-autoo object-cover opacity-100" // Ajusta la opacidad para que el texto resalte
         />
-        {/* Gradiente para suavizar la transición hacia el ProductGrid */}
+        {/* Gradiente  */}
         <div className="absolute inset-0 bg-gradient-to-r from-black via-black/30 to-transparent"></div>
       </div>
 

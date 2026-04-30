@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Papa from 'papaparse'; // Librería gratuita y ligera
+import Papa from 'papaparse';
 
 const CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vRifQMhtLCMKT9frPl8W-DV-AwfZX4zdSbYDp64FMp9vWRMwNBNFq3wjH0Wf1ZFLGeLrNz6lkEtnn2F/pub?output=csv';
 
@@ -16,7 +16,7 @@ export const useProducts = () => {
         const decoder = new TextDecoder('utf-8');
         const csv = decoder.decode(result.value);
         
-        // Convertimos el CSV a Objetos automáticamente
+      
         Papa.parse(csv, {
           header: true, // Usa la primera fila como nombres de propiedad
           skipEmptyLines: true,

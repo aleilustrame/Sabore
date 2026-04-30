@@ -85,7 +85,7 @@ function App() {
         onClose={() => setIsCartOpen(false)} 
         cart={cart}
         removeFromCart={removeFromCart}
-        updateQuantity={updateQuantity} // Ahora la función ya está definida arriba
+        updateQuantity={updateQuantity}
         totalPrice={totalPrice}
       />
     </div>
