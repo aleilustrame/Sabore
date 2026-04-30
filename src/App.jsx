@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import ProductExplorer from './components/ProductExplorer'; // Importamos el nuevo nombre
 import { useProducts } from './hooks/useProducts';
 import CartModal from './components/CartModal';
+import BrandStrip from './components/BrandStrip';
 
 function App() {
   const { products, loading } = useProducts();
@@ -69,6 +70,7 @@ function App() {
           onBack={() => setShowCatalog(false)} 
         />
       )}
+      <BrandStrip />
 
       <CartModal 
         isOpen={isCartOpen} 

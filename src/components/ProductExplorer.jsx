@@ -20,7 +20,7 @@ const ProductExplorer = ({ products = [], addToCart, onBack }) => {
       <div className="mb-12 space-y-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <h2 className="text-4xl font-black italic tracking-tighter text-gray-900 uppercase">
-            Catálogo Sabore
+            Nuestros Productos
           </h2>
           <button 
             onClick={onBack} 
