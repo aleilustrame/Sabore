@@ -20,7 +20,7 @@ const ProductGrid = () => {
   ];
 
   return (
-    <div className="w-full lg:w-2/5 bg-white p-6 lg:p-10 border-l border-gray-100 shadow-2xl z-20 h-auto lg:h-[85vh] overflow-y-auto custom-scrollbar">
+    <div className="w-full lg:w-2/5 bg-white p-6 lg:p-10 border-l border-gray-100 shadow-2xl z-20 h-auto lg:h-[85vh] overflow-y-auto no-scrollbar">
       <div className="max-w-md mx-auto">
         <h2 className="text-2xl font-black text-gray-900 mb-6 flex items-center gap-3">
           <span className="w-1.5 h-8 bg-red-700 rounded-full"></span>

@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 
 const BrandStrip = () => {
   const brands = [
-    { name: "Saborita", logo: "/assets/brands/saborita.svg" },
-    { name: "Sabore", logo: "/assets/brands/sabore.svg" },
-    { name: "Avileña", logo: "/assets/brands/avileña.svg", customStyle:{height:'45px'} },
+    {id: 'Saborita', name: "Saborita", logo: "/assets/brands/saborita.svg" },
+    {id: 'Sabore', name: "Sabore", logo: "/assets/brands/sabore.svg" },
+    {id: 'Avileña', name: "Avileña", logo: "/assets/brands/avileña.svg", customStyle:{height:'45px'} },
   ];
 
   return (

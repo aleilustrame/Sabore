@@ -5,12 +5,22 @@ const BrandDetail = () => {
 
   // Aquí podrías tener un objeto con la información de ADITECC SAS
   const brandInfo = {
-    aditecc: {
+    Saborita: {
       title: "Saborita",
       benefits: "Especialistas en condimentos y sabores para la industria cárnica desde 2013.",
       products: ["Mezclas para Chorizo", "Sabores Líquidos", "Colorantes"],
     },
-    // ... datos para otras marcas
+    Sabore: {
+      title: "Saborita",
+      benefits: "Especialistas en condimentos y sabores para la industria cárnica desde 2013.",
+      products: ["Mezclas para Chorizo", "Sabores Líquidos", "Colorantes"],
+    },
+    Avileña: {
+      title: "Saborita",
+      benefits: "Especialistas en condimentos y sabores para la industria cárnica desde 2013.",
+      products: ["Mezclas para Chorizo", "Sabores Líquidos", "Colorantes"],
+    },
+    
   };
 
   const data = brandInfo[brandId];
