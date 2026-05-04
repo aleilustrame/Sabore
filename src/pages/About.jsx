@@ -25,7 +25,7 @@ const About = () => {
           </p>
         </div>
         <div className="rounded-2xl overflow-hidden shadow-2xl">
-          <img src="Equipo-Saborita.png" alt="Equipo Saborita" className="w-full h-80 object-cover" />
+          <img src="Equipo-Saborita.png" alt="Equipo Saborita" className="w-full h-100 object-cover" />
         </div>
       </section>
 

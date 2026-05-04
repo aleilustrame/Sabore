@@ -29,6 +29,9 @@ const Navbar = ({ cartCount, onOpenCart }) => {
             <Link to="/#marcas" className="text-gray-700 hover:text-red-700 font-medium transition-colors">
               Marcas
             </Link>
+            <Link to="/#marcas" onClick={closeMenu} className="text-gray-700 hover:text-red-700 font-medium transition-colors">
+              Puntos de venta
+            </Link>
             <Link to="/nosotros" className="text-gray-700 hover:text-red-700 font-medium transition-colors">
               Nosotros
             </Link>
@@ -44,7 +47,7 @@ const Navbar = ({ cartCount, onOpenCart }) => {
               Portal Mayoristas
             </button>
             
-            <button onClick={onOpenCart} className="relative p-2 text-gray-700 hover:text-red-700 transition-colors">
+            <button onClick={onOpenCart} className="relative p-2 text-gray-700 hover:text-red-700 transition-colors cursor-pointer">
               <ShoppingCart size={24} />
               {cartCount > 0 && (
                 <span className="absolute top-0 right-0 bg-red-700 text-white text-[10px] font-bold w-5 h-5 flex items-center justify-center rounded-full">
@@ -85,6 +88,9 @@ const Navbar = ({ cartCount, onOpenCart }) => {
             {/* NUEVO BOTÓN DE MARCAS MÓVIL */}
             <Link to="/#marcas" onClick={closeMenu} className="block text-lg font-medium text-gray-700 hover:text-red-700">
               Marcas
+            </Link>
+            <Link to="/#marcas" onClick={closeMenu} className="block text-lg font-medium text-gray-700 hover:text-red-700">
+              Puntos de venta
             </Link>
             <Link to="/nosotros" onClick={closeMenu} className="block text-lg font-medium text-gray-700 hover:text-red-700">
               Nosotros

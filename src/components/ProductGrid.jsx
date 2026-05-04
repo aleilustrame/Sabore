@@ -3,6 +3,8 @@ import { ShieldCheck, Truck, Users, ArrowRight, FileText } from 'lucide-react';
 import santarosano from '../assets/santarosano2.png'
 
 const ProductGrid = () => {
+
+  const drive = "https://drive.google.com/file/d/1pMvDQJguNQMSLrAADJJBwHAQiwIJ0a8-/view?usp=sharing"
   const benefits = [
     { title: "Calidad", icon: <ShieldCheck className="w-12 h-12 text-red-700" /> },
     { title: "Logística", icon: <Truck className="w-12 h-12 text-red-700" /> },
@@ -63,10 +65,10 @@ const ProductGrid = () => {
           ))}
         </div>
 
-        <button className="w-full mt-8 flex items-center justify-center gap-2 border-2 border-gray-900 py-3 rounded-xl font-bold text-xs hover:bg-gray-900 hover:text-white transition-all duration-300">
+        <a href={drive} target="_blank" className="cursor-pointer w-full mt-8 flex items-center justify-center gap-2 border-2 border-gray-900 py-3 rounded-xl font-bold text-xs hover:bg-gray-900 hover:text-white transition-all duration-300">
           <FileText className="w-4 h-4" />
-          Descargar Catalogo Completo
-        </button>
+          Ver catalogo completo
+        </a>
       </div>
     </div>
   );
