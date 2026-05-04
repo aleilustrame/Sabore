@@ -6,12 +6,16 @@ const ProductExplorer = ({ products = [], addToCart, onBack }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [category, setCategory] = useState("Todos");
 
-  // Categorías basadas en saborita
   const categories = ["Todos", "Chorizos", "Salchichas", "Salchichones", "Tajados", "Linea monaco", "Economico"];
 
   const filteredProducts = products?.filter(product => {
-    const matchesSearch = product.name?.toLowerCase().includes(searchTerm.toLowerCase());
+    // Ahora busca tanto en el nombre como en la descripción para ser más preciso
+    const matchesSearch = 
+      product.name?.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      product.description?.toLowerCase().includes(searchTerm.toLowerCase());
+    
     const matchesCategory = category === "Todos" || product.category === category;
+    
     return matchesSearch && matchesCategory;
   }) || [];
 
@@ -19,9 +23,12 @@ const ProductExplorer = ({ products = [], addToCart, onBack }) => {
     <main className="max-w-7xl mx-auto px-6 py-20 animate-in fade-in duration-700">
       <div className="mb-12 space-y-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-          <h2 className="text-4xl font-black italic tracking-tighter text-gray-900 uppercase">
-            Nuestros Productos
-          </h2>
+          <div>
+            <span className="text-red-700 font-bold tracking-widest text-xs uppercase">Catálogo Saborita</span>
+            <h2 className="text-4xl font-black italic tracking-tighter text-gray-900 uppercase">
+              Nuestros Productos
+            </h2>
+          </div>
           <button 
             onClick={onBack} 
             className="text-xs font-bold uppercase tracking-widest text-gray-400 hover:text-red-700 transition-colors"
@@ -47,7 +54,7 @@ const ProductExplorer = ({ products = [], addToCart, onBack }) => {
               <button
                 key={cat}
                 onClick={() => setCategory(cat)}
-                className={`px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider transition-all ${
+                className={`px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-wider transition-all ${
                   category === cat 
                   ? "bg-red-700 text-white shadow-lg shadow-red-900/20" 
                   : "bg-white text-gray-500 hover:bg-gray-100 border border-gray-100"

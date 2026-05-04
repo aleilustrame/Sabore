@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Trash2, Plus, Minus, Truck, HelpCircle } from 'lucide-react';
 
 const Cart = () => {
-  // Estado inicial con productos de ejemplo para Sabore
+  // Estado inicial con productos de ejemplo para Saborita
   const [cartItems, setCartItems] = useState([
     { id: 1, name: 'Chorizo Santarrosano', sku: 'SANT-001', price: 12000, qty: 4, img: 'https://images.unsplash.com/photo-1593032465175-481ac7f401a0?w=150' },
     { id: 2, name: 'Butifarra Soledeña', sku: 'BUTI-024', price: 10500, qty: 2, img: 'https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?w=150' },
@@ -126,7 +126,7 @@ const Cart = () => {
               </div>
               <div>
                 <p className="text-sm font-bold text-green-900 leading-tight">Logística de Confianza</p>
-                <p className="text-[10px] text-green-700 mt-1">Envíos refrigerados garantizados por ADITECC SAS.</p>
+                <p className="text-[10px] text-green-700 mt-1">Envíos refrigerados garantizados por Saborita.</p>
               </div>
             </div>
           </div>
