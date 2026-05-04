@@ -38,7 +38,7 @@ const Hero = ({ onStartShopping }) => {
 
             <p className="text-lg md:text-xl text-gray-300 mb-10 leading-relaxed font-light">
               Desde 1982, Salsamentaria Saboré abastece negocios y restaurantes en todo Colombia con embutidos y 
-            carnes frías de alta calidad. Confianza, frescura y tradición en cada producto. ¡Cotiza por whatsapp!
+              carnes frías de alta calidad. Confianza, frescura y tradición en cada producto. ¡Cotiza por whatsapp!
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
