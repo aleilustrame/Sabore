@@ -1,7 +1,7 @@
 import React from "react"
  const WhyUs = () => {
   return (
-    <section className=" max-w-7xl mx-auto py-16 px-15 grid md:grid-cols-2 gap-12 items-center">
+    <section className=" max-w-7xl mx-auto py-16 px-6 grid md:grid-cols-2 gap-12 items-center">
         <div>
           <h2 className="text-5xl font-bold text-red-800 mb-6">En Saborita transformamos la tradición en confianza y sabor para tu mesa y tu negocio</h2>
           <p className="text-xl text-justify text-gray-800 leading-snug mb-4">
