@@ -16,7 +16,7 @@ const ProductCard = ({ product, addToCart }) => {
           <img 
             src={product.image}
             alt={product.name} 
-            className="w-auto h-auto object-full transition-transform duration-700 group-hover:scale-110"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
           />
           {/* Badge de Categoría opcional */}
           <div className="absolute top-4 left-4">

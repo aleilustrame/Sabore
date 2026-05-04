@@ -3,7 +3,7 @@ export const productsData = [
     id: 1,
     name: "Chorizo Paisa",
     category: "Chorizos",
-    image: "./chorizos/Paisa-relieve.png",
+    image: "./chorizos/SantarosanoPlato.png",
     description: "Sabor auténtico con especias seleccionadas.",
     weights: [
       { label: '450g x10', price: 18500 },
