@@ -5,6 +5,8 @@ import logo from '../assets/logo.png';
 const Footer = ({ onLogoClick }) => {
   const currentYear = new Date().getFullYear();
 
+ const whatsappLink = "https://wa.me/573204803886";
+
   return (
     <footer className="bg-red-700 text-white pt-12 pb-6">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
@@ -44,9 +46,9 @@ const Footer = ({ onLogoClick }) => {
         <div>
           <h4 className="text-lg font-bold mb-4">Contacto</h4>
           <p className="text-sm text-red-100 mb-4">¿Tienes dudas técnicas sobre nuestros productos?</p>
-          <button className="bg-white text-red-700 px-6 py-2 rounded-full font-bold text-sm hover:bg-red-50 transition-colors">
+          <a  href={whatsappLink} target="_blank" rel="noreferrer" className="bg-white text-red-700 px-6 py-2 rounded-full font-bold text-sm hover:bg-red-50 transition-colors">
             Escríbenos
-          </button>
+          </a>
         </div>
       </div>
 

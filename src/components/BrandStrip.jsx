@@ -9,7 +9,7 @@ const BrandStrip = () => {
   ];
 
   return (
-    <section className="bg-white border-b border-gray-100 py-8">
+    <section className="bg-white border-b border-gray-100 py-20">
       <div className="max-w-7xl mx-auto px-6">
         <p className="text-center text-[25px] font-bold uppercase tracking-[0.2em] text-gray-400 mb-6">
           Nuestras Marcas

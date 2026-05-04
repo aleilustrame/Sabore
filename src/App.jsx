@@ -3,6 +3,8 @@ import { Routes, Route, useNavigate } from 'react-router-dom'; // Cambiamos a us
 import Navbar from './components/Navbar';
 import About from './pages/About';
 import Hero from './components/Hero';
+import WhyUs from './components/WhyUs';
+import Testimonials from './components/Testimonials';
 import ContactSection from './components/ContactSection';
 import ProductExplorer from './components/ProductExplorer';
 import { useProducts } from './hooks/useProducts';
@@ -54,27 +56,29 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
-      {/* Ya no necesitas pasar 'onLogoClick' porque el Navbar usará <Link to="/"> */}
+      {/* react router */}
       <Navbar 
         cartCount={cart.reduce((a, b) => a + b.qty, 0)} 
         onOpenCart={() => setIsCartOpen(true)} 
       />
 
-      {/* Usamos flex-grow para que el Footer siempre se quede abajo */}
+      {/* el Footer */}
       <main className="flex-grow">
         <Routes>
           
-          {/* RUTA PRINCIPAL (/) - Muestra Hero, Marcas y Contacto */}
+          {/* RUTA PRINCIPAL (/) - Hero, Marcas y Contacto */}
           <Route path="/" element={
             <>
               {/* Al hacer clic en el botón del Hero, nos lleva a la ruta de productos */}
               <Hero onStartShopping={() => navigate('/productos')} />
               <BrandStrip />
+              <WhyUs />
+              <Testimonials />
               <ContactSection />
             </>
           } />
 
-          {/* NUEVA RUTA DEDICADA PARA EL CATÁLOGO (/productos) */}
+          {/*RUTA DEDICADA PARA EL CATÁLOGO (/productos) */}
           <Route path="/productos" element={
             <ProductExplorer 
               products={products} 
