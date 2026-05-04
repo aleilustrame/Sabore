@@ -4,7 +4,7 @@ import { MessageCircle, Camera, Mail, MapPin } from 'lucide-react';
 const ContactSection = () => {
   // Configuración de datos de Saborita
   const contactInfo = {
-    whatsapp: "https://wa.me/573204803886",
+    whatsapp: "https://wa.me/573204803886?text=¡Hola! Vengo de la pagina web y me gustaria recibir mas información sobre sus productos.",
     instagram: "https://instagram.com/saborita_gia",
     email: "ventas@sabore.com.co",
     address: "San Andresito de la 38, Carrera 38 #10a - 77 Bogotá, Colombia"
@@ -34,7 +34,7 @@ const ContactSection = () => {
                 </a>
 
                 {/* Botón Instagram */}
-                <a href={contactInfo.instagram} target="_blank" rel="noreferrer" 
+                <a href={contactInfo.instagram} target="_blank" rel="noreferrer"
                    className="flex items-center gap-4 p-4 bg-gradient-to-tr from-yellow-500 via-red-500 to-purple-600 hover:opacity-90 text-white rounded-2xl transition-all font-bold shadow-md">
                   <Camera size={34} />
                   Síguenos en Instagram
