@@ -65,7 +65,7 @@ const ProductGrid = () => {
 
         <button className="w-full mt-8 flex items-center justify-center gap-2 border-2 border-gray-900 py-3 rounded-xl font-bold text-xs hover:bg-gray-900 hover:text-white transition-all duration-300">
           <FileText className="w-4 h-4" />
-          Descargar Portafolio Completo
+          Descargar Catalogo Completo
         </button>
       </div>
     </div>
