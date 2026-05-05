@@ -443,7 +443,7 @@ export const productsData = [
   {
     id: 36,
     name: "Pavo",
-    category: "Salchichones",
+    category: "Linea monaco",
     image: "/images/salchicha-monaco.jpg",
     description: "Calidad superior con el balance perfecto de condimentos.",
     weights: [
@@ -454,7 +454,7 @@ export const productsData = [
    {
     id: 37,
     name: "Pernil",
-    category: "Salchichones",
+    category: "Linea monaco",
     image: "/images/salchicha-monaco.jpg",
     description: "Calidad superior con el balance perfecto de condimentos.",
     weights: [
@@ -464,7 +464,7 @@ export const productsData = [
   {
     id: 38,
     name: "Pera Pavo",
-    category: "Salchichones",
+    category: "Linea monaco",
     image: "/images/salchicha-monaco.jpg",
     description: "Calidad superior con el balance perfecto de condimentos.",
     weights: [
@@ -507,7 +507,7 @@ export const productsData = [
     ]
   },
   {
-    id: 41,
+    id: 42,
     name: "Mortadela Jamonada",
     category: "Economico",
     image: "/images/salchicha-monaco.jpg",

@@ -20,7 +20,7 @@ const ProductExplorer = ({ products = [], addToCart, onBack }) => {
   }) || [];
 
   return (
-    <main className="max-w-7xl mx-auto px-6 py-20 animate-in fade-in duration-700">
+    <main className="max-w-6xl mx-auto px-6 py-20 animate-in fade-in duration-700">
       <div className="mb-12 space-y-8">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
@@ -43,7 +43,7 @@ const ProductExplorer = ({ products = [], addToCart, onBack }) => {
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
             <input 
               type="text"
-              placeholder="¿Buscas condimentos o carnes frías?"
+              placeholder="Escribe una palabra clave (ej.. Chorizos)"
               className="w-full pl-12 pr-6 py-4 rounded-2xl bg-white border border-gray-200 shadow-sm focus:ring-2 focus:ring-red-700 outline-none transition-all"
               onChange={(e) => setSearchTerm(e.target.value)}
             />
@@ -68,7 +68,7 @@ const ProductExplorer = ({ products = [], addToCart, onBack }) => {
       </div>
 
       {/* Grid de Productos */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
         {filteredProducts.length > 0 ? (
           filteredProducts.map(product => (
             <ProductCard key={product.id} product={product} addToCart={addToCart} />
