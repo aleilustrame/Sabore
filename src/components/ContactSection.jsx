@@ -11,7 +11,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section className="py-25 bg-white" id="contacto">
+    <section className="py-25 bg-gray-40" id="contacto">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-black text-red-800 mb-4">ENCUÉNTRANOS</h2>
@@ -22,7 +22,7 @@ const ContactSection = () => {
           
           {/* Tarjeta de Información y Botones */}
           <div className="space-y-6">
-            <div className="bg-gray-50 p-8 rounded-3xl border border-gray-100 shadow-sm">
+            <div className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm">
               <h3 className="text-2xl font-bold mb-6 text-red-700">Contactanos</h3>
               
               <div className="space-y-4">
