@@ -16,7 +16,7 @@ const BrandStrip = () => {
         </p>
         <div className="flex flex-wrap justify-center items-center gap-12 md:gap-24 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 hover:opacity-100">
           {brands.map((brand) => (
-            <Link key={brand.name} to={`/marca/${brand.id}`} className="hover:scale-105 transition-transform">
+            <Link key={brand.id} to={`/marcas/${brand.id}`} className="hover:scale-110 transition-transform">
             <img 
               key={brand.name}
               src={brand.logo} 

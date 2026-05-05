@@ -76,6 +76,14 @@ function App() {
             </>
           } />
 
+          
+          <Route path="/marcas/:brandId?" element={
+            <div className="animate-in fade-in duration-500">
+              <BrandStrip />
+              <BrandDetail /> 
+            </div>
+          } />
+
           {/*RUTA DEDICADA PARA EL CATÁLOGO (/productos) */}
           <Route path="/productos" element={
             <ProductExplorer 

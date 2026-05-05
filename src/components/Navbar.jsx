@@ -25,8 +25,7 @@ const Navbar = ({ cartCount, onOpenCart }) => {
             <Link to="/productos" className="text-gray-700 hover:text-red-700 font-medium transition-colors">
               Productos
             </Link>
-            {/* NUEVO BOTÓN DE MARCAS */}
-            <Link to="/#marcas" className="text-gray-700 hover:text-red-700 font-medium transition-colors">
+           <Link to="/marcas"className="text-gray-700 hover:text-red-700 font-medium transition-colors">
               Marcas
             </Link>
             <Link to="/#marcas" onClick={closeMenu} className="text-gray-700 hover:text-red-700 font-medium transition-colors">
