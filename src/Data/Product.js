@@ -176,4 +176,344 @@ export const productsData = [
       { label: '3500g x15', price: 12400 },
     ]
   },
+  //Tajados//
+
+ {
+    id: 15,
+    name: "Jamon Froster",
+    category: "Tajados",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '250g', price: 12400 },
+      { label: '450g', price: 12400 }
+    ]
+  },
+
+  {
+    id: 16,
+    name: "Jamon Tradicional",
+    category: "Tajados",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '250g', price: 12400 },
+      { label: '450g', price: 12400 }
+    ]
+  },
+
+   {
+    id: 17,
+    name: "Mortadela Carne",
+    category: "Tajados",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '250g', price: 12400 },
+      { label: '450g', price: 12400 }
+    ]
+  },
+
+    {
+    id: 18,
+    name: "Hamburguesa",
+    category: "Tajados",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '450g x6', price: 12400 },
+      { label: '450g x10', price: 12400 }
+    ]
+  },
+
+   {
+    id: 19,
+    name: "Tocineta Especial",
+    category: "Tajados",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '450g x10', price: 12400 }
+    ]
+  },
+
+  {
+    id: 20,
+    name: "Tocineta",
+    category: "Tajados",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '150g', price: 12400 },
+      { label: '250g', price: 12400 },
+      { label: '500g', price: 12400 },
+      { label: '900g', price: 12400 },
+      { label: '1000g', price: 12400 }
+    ]
+  },
+//salchichones//
+   {
+    id: 21,
+    name: "Cervecero Tradicional",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '500g', price: 12400 },
+      { label: '900g', price: 12400 },
+      { label: '1000g', price: 12400 }
+    ]
+  },
+
+    {
+    id: 22,
+    name: "Cervecero Tradicional",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '1100g', price: 12400 }
+    ]
+  },
+  {
+    id: 23,
+    name: "Elite Premium",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '1300g', price: 12400 }
+    ]
+  },
+   {
+    id: 24,
+    name: "Nostro",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '750g', price: 12400 },
+      { label: '900g', price: 12400 },
+      { label: '1000g', price: 12400 },
+      { label: '1300g', price: 12400 },
+    ]
+  },
+     {
+    id: 25,
+    name: "Nostro",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '750g', price: 12400 },
+      { label: '900g', price: 12400 },
+      { label: '1000g', price: 12400 },
+      { label: '1300g', price: 12400 },
+    ]
+  },
+
+    {
+    id: 26,
+    name: "Balcelona Carne",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '750g', price: 12400 },
+      { label: '900g', price: 12400 },
+      { label: '1000g', price: 12400 },
+    ]
+  },
+
+   {
+    id: 27,
+    name: "Balcelona Pollo",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '750g', price: 12400 },
+      { label: '900g', price: 12400 },
+      { label: '1000g', price: 12400 },
+    ]
+  },
+
+     {
+    id: 28,
+    name: "Valencia Naranja",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '500g', price: 12400 },
+      { label: '600g', price: 12400 },
+      { label: '700g', price: 12400 },
+    ]
+  },
+      {
+    id: 29,
+    name: "Froster Pollo",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '500g', price: 12400 },
+      { label: '600g', price: 12400 },
+      { label: '700g', price: 12400 },
+    ]
+  },
+     {
+    id: 30,
+    name: "Rojo Toro",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '500g', price: 12400 },
+      { label: '600g', price: 12400 },
+      { label: '700g', price: 12400 },
+    ]
+  },
+
+     {
+    id: 31,
+    name: "Guajiro",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '500g', price: 12400 },
+      { label: '600g', price: 12400 },
+      { label: '700g', price: 12400 },
+      { label: '800g', price: 12400 },
+    ]
+  },
+      {
+    id: 32,
+    name: "Naranja",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '500g', price: 12400 },
+      { label: '600g', price: 12400 },
+      { label: '700g', price: 12400 },
+      { label: '800g', price: 12400 },
+    ]
+  },
+     {
+    id: 33,
+    name: "Romano Carne",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '900g', price: 12400 },
+      { label: '1000g', price: 12400 },
+      { label: '1200g', price: 12400 }
+    ]
+  },
+  {
+    id: 34,
+    name: "Romano Pollo",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '900g', price: 12400 },
+      { label: '1000g', price: 12400 },
+      { label: '1200g', price: 12400 }
+    ]
+  },
+
+  {
+    id: 35,
+    name: "Alicante",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '900g', price: 12400 },
+      { label: '1400g', price: 12400 },
+      { label: '1500g', price: 12400 }
+    ]
+  },
+
+  //linea mmonaco//
+  {
+    id: 36,
+    name: "Pavo",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '500g', price: 12400 },
+    ]
+  },
+
+   {
+    id: 37,
+    name: "Pernil",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '500g', price: 12400 },
+    ]
+  },
+  {
+    id: 38,
+    name: "Pera Pavo",
+    category: "Salchichones",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '500g', price: 12400 },
+    ]
+  },
+
+  //Economico//
+  {
+    id: 39,
+    name: "Chorizo antioqueño",
+    category: "Economico",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '250g x5', price: 12400 },
+      { label: '450g x16', price: 12400 },
+      { label: '450g x11', price: 12400 },
+    ]
+  },
+  {
+    id: 40,
+    name: "Mortadela Lonchera",
+    category: "Economico",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '250g', price: 12400 },
+      { label: '500g', price: 12400 }
+    ]
+  },
+  {
+    id: 41,
+    name: "Butifarra",
+    category: "Economico",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '2500g', price: 12400 },
+    ]
+  },
+  {
+    id: 41,
+    name: "Mortadela Jamonada",
+    category: "Economico",
+    image: "/images/salchicha-monaco.jpg",
+    description: "Calidad superior con el balance perfecto de condimentos.",
+    weights: [
+      { label: '400g', price: 12400 },
+    ]
+  },
 ];
