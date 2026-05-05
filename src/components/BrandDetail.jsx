@@ -1,4 +1,5 @@
 import { useParams } from 'react-router-dom';
+import BrandStrip from './BrandStrip';
 
 const BrandDetail = () => {
   const { brandId } = useParams();
@@ -28,8 +29,11 @@ const BrandDetail = () => {
   if (!data) return <p>Marca no encontrada</p>;
 
   return (
-    <div className="max-w-4xl mx-auto py-12 px-6">
-      <h1 className="text-5xl font-bold mb-4">{data.title}</h1>
+    
+    <div >
+      <BrandStrip />
+      <div className="max-w-4xl mx-auto py-12 px-6">
+        <h1 className="text-5xl font-bold mb-4">{data.title}</h1>
       <section className="mb-8">
         <h2 className="text-2xl font-semibold">Historia</h2>
         <p className="text-gray-600">{data.benefits}</p>
@@ -40,6 +44,8 @@ const BrandDetail = () => {
           {data.products.map(p => <li key={p}>{p}</li>)}
         </ul>
       </section>
+      </div>
+      
     </div>
   );
 };

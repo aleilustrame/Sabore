@@ -62,14 +62,12 @@ function App() {
         onOpenCart={() => setIsCartOpen(true)} 
       />
 
-      {/* el Footer */}
       <main className="flex-grow">
         <Routes>
           
           {/* RUTA PRINCIPAL (/) - Hero, Marcas y Contacto */}
           <Route path="/" element={
             <>
-              {/* Al hacer clic en el botón del Hero, nos lleva a la ruta de productos */}
               <Hero onStartShopping={() => navigate('/productos')} />
               <BrandStrip />
               <WhyUs />
