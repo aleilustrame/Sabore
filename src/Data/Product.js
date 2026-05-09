@@ -3,7 +3,7 @@ export const productsData = [
     id: 1,
     name: "Chorizo Paisa",
     category: "Chorizos",
-    image: "./chorizos/SantarosanoPlato.png",
+    image: "./chorizos/Chorizo-paisa.png",
     description: "Sabor auténtico con especias seleccionadas.",
     weights: [
       { label: '450g x10', price: 18500 },
@@ -18,7 +18,7 @@ export const productsData = [
     id: 2,
     name: "Santarrosano",
     category: "Chorizos",
-    image: "/images/salchicha-monaco.jpg",
+    image: "./chorizos/SantarosanoPlato.png",
     description: "Calidad superior con el balance perfecto de condimentos.",
     weights: [
       { label: '450g x10', price: 12400 },
@@ -31,7 +31,7 @@ export const productsData = [
     id: 3,
     name: "Valencia",
     category: "Chorizos",
-    image: "/images/salchicha-monaco.jpg",
+    image: "./chorizos/Chorizo-valencia.png",
     description: "Calidad superior con el balance perfecto de condimentos.",
     weights: [
       { label: '450g x10', price: 12400 },
@@ -241,7 +241,7 @@ export const productsData = [
     id: 20,
     name: "Tocineta",
     category: "Tajados",
-    image: "/images/salchicha-monaco.jpg",
+    image: "./chorizos/Tocineta.png",
     description: "Calidad superior con el balance perfecto de condimentos.",
     weights: [
       { label: '150g', price: 12400 },

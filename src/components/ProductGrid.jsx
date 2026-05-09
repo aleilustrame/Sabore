@@ -1,6 +1,10 @@
 import React from 'react';
 import { ShieldCheck, Truck, Users, ArrowRight, FileText } from 'lucide-react';
 import santarosano from '../assets/santarosano2.png'
+import ChorizoPaisa from '../assets/Chorizo-Paisa.png'
+import Tocineta from '../assets/Tocineta1.png'
+import Salchicha from '../assets/salchicha.png'
+import Pavo from '../assets/Pavo.jpg'
 
 const ProductGrid = () => {
 
@@ -13,11 +17,11 @@ const ProductGrid = () => {
 
   // Lista ampliada a 6 productos
   const categories = [
-    { name: "Chorizos", img: santarosano, tag: "Top" },
-    { name: "Salchichas", img: santarosano, tag: "Tradición" },
+    { name: "Chorizos", img: ChorizoPaisa, tag: "Top" },
+    { name: "Salchichas", img: Salchicha, tag: "Tradición" },
     { name: "Salchichones", img: santarosano, tag: "Artesanal" },
-    { name: "Línea Monaco", img: santarosano, tag: "Especial" },
-    { name: "Tajados", img: santarosano, tag: "Popular" },
+    { name: "Línea Monaco", img: Pavo, tag: "Especial" },
+    { name: "Tajados", img: Tocineta, tag: "Popular" },
     { name: "Economico", img: santarosano, tag: "Nuevo" }
   ];
 
