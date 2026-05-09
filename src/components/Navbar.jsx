@@ -85,7 +85,7 @@ const Navbar = ({ cartCount, onOpenCart }) => {
               Productos
             </Link>
             {/* NUEVO BOTÓN DE MARCAS MÓVIL */}
-            <Link to="/#marcas" onClick={closeMenu} className="block text-lg font-medium text-gray-700 hover:text-red-700">
+            <Link to="/marcas" onClick={closeMenu} className="block text-lg font-medium text-gray-700 hover:text-red-700">
               Marcas
             </Link>
             <Link to="/#marcas" onClick={closeMenu} className="block text-lg font-medium text-gray-700 hover:text-red-700">

@@ -1,7 +1,7 @@
 import React from 'react';
 import { X, Trash2, ShoppingBag, Plus, Minus } from 'lucide-react';
 
-const CartModal = ({ isOpen, onClose, cart, removeFromCart, updateQuantity, totalPrice }) => {
+const CartModal = ({ isOpen, onClose, cart, removeFromCart, product, updateQuantity, totalPrice }) => {
   if (!isOpen) return null;
 
   return (
