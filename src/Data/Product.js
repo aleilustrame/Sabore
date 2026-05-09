@@ -88,7 +88,7 @@ export const productsData = [
     id: 8,
     name: "Super Dog",
     category: "Salchichas",
-    image: "/images/salchicha-monaco.jpg",
+    image: "./Salchichas/Superdog1.png",
     description: "Calidad superior con el balance perfecto de condimentos.",
     weights: [
       { label: '500g x14', price: 12400 },
